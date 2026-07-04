@@ -1,0 +1,25 @@
+{
+  "name": "stitch-site-cli",
+  "version": "0.1.0",
+  "description": "CLI to turn a Stitch design package zip into a Next.js site",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "stitch-site": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "jszip": "^3.10.1",
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
